@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_GenePainConstantBase" Abstract="True">
+        <displayCategory>Pain</displayCategory>
+        <suppressedTraits>
+            <li>
+                <def>Wimp</def>
+            </li>
+        </suppressedTraits>
+        <exclusionTags>
+            <li>Pain</li>
+            <li>Painful</li>
+            <li>EBSG_Wimp</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainConstantBase">
+        <defName>EBSG_ExtremeConstantPain</defName>
+        <label>extreme constant pain</label>
+        <description>Whether it's due to a cruel scientist or destructive natural evolution, carriers of this gene have pain centers that misfire constantly. As a result, they suffer from extreme amounts of pain constantly.\n\nDue to its nature, this gene is incompatible with most pain genes.</description>
+        <iconPath>EBSG/Gene_MajorConstantPain</iconPath>
+        <marketValueFactor>0.6</marketValueFactor>
+        <displayOrderInCategory>50</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>4</biostatMet>
+        <painOffset>0.40</painOffset>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>sufferer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>pain</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainConstantBase">
+        <defName>EBSG_MajorConstantPain</defName>
+        <label>major constant pain</label>
+        <description>Whether it's due to a cruel scientist or destructive natural evolution, carriers of this gene have pain centers that misfire constantly. As a result, they suffer from significant amounts of pain constantly.\n\nDue to its nature, this gene is incompatible with most pain genes.</description>
+        <iconPath>EBSG/Gene_MajorConstantPain</iconPath>
+        <marketValueFactor>0.7</marketValueFactor>
+        <displayOrderInCategory>50.1</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <painOffset>0.30</painOffset>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>sufferer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>pain</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_PainTraits</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainConstantBase">
+        <defName>EBSG_ConstantPain</defName>
+        <label>constant pain</label>
+        <description>Whether it's due to a cruel scientist or destructive natural evolution, carriers of this gene have pain centers that misfire constantly. As a result, constnatly feel in pain.\n\nDue to its nature, this gene is incompatible with most pain genes.</description>
+        <iconPath>EBSG/Gene_ConstantPain</iconPath>
+        <marketValueFactor>0.8</marketValueFactor>
+        <displayOrderInCategory>50.2</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <painOffset>0.20</painOffset>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>sufferer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>pain</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainConstantBase">
+        <defName>EBSG_MinorConstantPain</defName>
+        <label>minor constant pain</label>
+        <description>Whether it's due to a cruel scientist or destructive natural evolution, carriers of this gene have pain centers that misfire constantly. As a result, they suffer from small amounts of pain constantly.\n\nDue to its nature, this gene is incompatible with most pain genes.</description>
+        <iconPath>EBSG/Gene_ConstantPain</iconPath>
+        <marketValueFactor>0.9</marketValueFactor>
+        <displayOrderInCategory>50.3</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <painOffset>0.10</painOffset>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>sufferer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>pain</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>

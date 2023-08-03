@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="AG_Painless"]</xpath>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/GeneDef[defName="AG_Painless"]/exclusionTags</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/GeneDef[defName="AG_Painless"]/exclusionTags</xpath>
+                <value><li>Painful</li></value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/GeneDef[defName="AG_Painless"]</xpath>
+                <value>
+                    <exclusionTags>
+                        <li>Painful</li>
+                    </exclusionTags>
+                </value>
+            </nomatch>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="Pain_Immune"]</xpath>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/GeneDef[defName="Pain_Immune"]/exclusionTags</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/GeneDef[defName="Pain_Immune"]/exclusionTags</xpath>
+                <value><li>Painful</li></value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/GeneDef[defName="Pain_Immune"]</xpath>
+                <value>
+                    <exclusionTags>
+                        <li>Painful</li>
+                    </exclusionTags>
+                </value>
+            </nomatch>
+        </match>
+    </Operation>
+</Patch>
