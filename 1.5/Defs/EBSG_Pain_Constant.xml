@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_GenePainConstantBase" Abstract="True">
+        <displayCategory>Pain</displayCategory>
+        <suppressedTraits>
+            <li>
+                <def>Wimp</def>
+            </li>
+        </suppressedTraits>
+        <exclusionTags>
+            <li>EBSG_Wimp</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainConstantBase" Name="EBSG_ConstantPain" Abstract="True">
+        <exclusionTags>
+            <li>Pain</li>
+            <li>Painful</li>
+        </exclusionTags>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>sufferer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>pain</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainConstantBase" Name="EBSG_Numbness" Abstract="True">
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>endurer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>unfeel</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ConstantPain">
+        <defName>EBSG_ExtremeConstantPain</defName>
+        <label>extreme constant pain</label>
+        <description>Whether it's due to a cruel scientist or destructive natural evolution, carriers of this gene have pain centers that misfire constantly. As a result, they suffer from extreme amounts of pain constantly.\n\nDue to its nature, this gene is incompatible with most pain genes.</description>
+        <iconPath>EBSG/Gene_MajorConstantPain</iconPath>
+        <marketValueFactor>0.6</marketValueFactor>
+        <displayOrderInCategory>50</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>4</biostatMet>
+        <painOffset>0.40</painOffset>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ConstantPain">
+        <defName>EBSG_MajorConstantPain</defName>
+        <label>major constant pain</label>
+        <description>Whether it's due to a cruel scientist or destructive natural evolution, carriers of this gene have pain centers that misfire constantly. As a result, they suffer from significant amounts of pain constantly.\n\nDue to its nature, this gene is incompatible with most pain genes.</description>
+        <iconPath>EBSG/Gene_MajorConstantPain</iconPath>
+        <marketValueFactor>0.7</marketValueFactor>
+        <displayOrderInCategory>50.1</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <painOffset>0.30</painOffset>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>sufferer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>pain</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ConstantPain">
+        <defName>EBSG_ConstantPain</defName>
+        <label>constant pain</label>
+        <description>Whether it's due to a cruel scientist or destructive natural evolution, carriers of this gene have pain centers that misfire constantly. As a result, they are constantly in pain.\n\nDue to its nature, this gene is incompatible with most pain genes.</description>
+        <iconPath>EBSG/Gene_ConstantPain</iconPath>
+        <marketValueFactor>0.8</marketValueFactor>
+        <displayOrderInCategory>50.2</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <painOffset>0.20</painOffset>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>sufferer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>pain</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ConstantPain">
+        <defName>EBSG_MinorConstantPain</defName>
+        <label>minor constant pain</label>
+        <description>Whether it's due to a cruel scientist or destructive natural evolution, carriers of this gene have pain centers that misfire constantly. As a result, they suffer from small amounts of pain constantly.\n\nDue to its nature, this gene is incompatible with most pain genes.</description>
+        <iconPath>EBSG/Gene_ConstantPain</iconPath>
+        <marketValueFactor>0.9</marketValueFactor>
+        <displayOrderInCategory>50.3</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <painOffset>0.10</painOffset>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>sufferer</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>pain</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Numbness">
+        <defName>EBSG_MinorNumbness</defName>
+        <label>minor numbness</label>
+        <description>Carriers of this gene have nervous systems that don't react to pain normally. As a result, they can ignore small amounts of pain without a second thought.</description>
+        <iconPath>EBSG/Gene_Numbness</iconPath>
+        <marketValueFactor>1.1</marketValueFactor>
+        <displayOrderInCategory>50.4</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <painOffset>-0.10</painOffset>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Numbness">
+        <defName>EBSG_Numbness</defName>
+        <label>numbness</label>
+        <description>Carriers of this gene have nervous systems that don't react to pain normally. As a result, they are more resilient to pain.</description>
+        <iconPath>EBSG/Gene_Numbness</iconPath>
+        <marketValueFactor>1.2</marketValueFactor>
+        <displayOrderInCategory>50.5</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <painOffset>-0.20</painOffset>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Numbness">
+        <defName>EBSG_MajorNumbness</defName>
+        <label>major numbness</label>
+        <description>Carriers of this gene have nervous systems that don't react to pain normally. As a result, they can ignore significant amounts of pain without a second thought.</description>
+        <iconPath>EBSG/Gene_Numbness</iconPath>
+        <marketValueFactor>1.3</marketValueFactor>
+        <displayOrderInCategory>50.6</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        <painOffset>-0.30</painOffset>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Numbness">
+        <defName>EBSG_ExtremeNumbness</defName>
+        <label>extremely numb</label>
+        <description>Carriers of this gene have nervous systems that don't react to pain normally. As a result, they can ignore extreme amounts of pain without a second thought.</description>
+        <iconPath>EBSG/Gene_ExtremeNumbness</iconPath>
+        <marketValueFactor>1.4</marketValueFactor>
+        <displayOrderInCategory>50.7</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-4</biostatMet>
+        <painOffset>-0.40</painOffset>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Numbness">
+        <defName>EBSG_SuperNumbness</defName>
+        <label>super numb</label>
+        <description>Carriers of this gene have nervous systems that don't react to pain normally. As a result, they can ignore massive amounts of pain without a second thought.</description>
+        <iconPath>EBSG/Gene_ExtremeNumbness</iconPath>
+        <marketValueFactor>1.5</marketValueFactor>
+        <displayOrderInCategory>50.8</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-5</biostatMet>
+        <painOffset>-0.50</painOffset>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Numbness">
+        <defName>EBSG_HyperNumbness</defName>
+        <label>hyper numbness</label>
+        <description>Carriers of this gene have nervous systems that don't react to pain normally. As a result, they can ignore unbelievable amounts of pain without a second thought.</description>
+        <iconPath>EBSG/Gene_ExtremeNumbness</iconPath>
+        <marketValueFactor>1.6</marketValueFactor>
+        <displayOrderInCategory>50.9</displayOrderInCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-6</biostatMet>
+        <painOffset>-0.60</painOffset>
+    </GeneDef>
+</Defs>

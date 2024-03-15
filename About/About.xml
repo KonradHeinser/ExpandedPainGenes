@@ -5,6 +5,7 @@
   <packageId>EBSG.Pain</packageId>
   <supportedVersions>
     <li>1.4</li>
+    <li>1.5</li>
   </supportedVersions>
   
   <modDependencies>
@@ -39,4 +40,3 @@ This mod will eventually be put into Expanded Biotech Style Genes - All in One. 
 </ModMetaData>
 
 <!--Original textures for wimp and masochist are available on https://game-icons.net-->
-
