@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_GenePainfulBase" Abstract="True">
+        <displayCategory>Pain</displayCategory>
+        <exclusionTags>
+            <li>Painful</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainfulBase">
+        <defName>EBSG_SuperFeeble</defName>
+        <label>super feeble</label>
+        <description>Carriers of this gene are unimaginably weak against pain, and the slightest damage may cause make them fall unconscious.</description>
+        <iconPath>EBSG/Gene_MajorFeeble</iconPath>
+        <marketValueFactor>0.7</marketValueFactor>
+        <displayOrderInCategory>40</displayOrderInCategory>
+        <statOffsets>
+            <PainShockThreshold>-0.40</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>4</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>feeble</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainfulBase">
+        <defName>EBSG_ExtremeFeeble</defName>
+        <label>extremely feeble</label>
+        <description>Carriers of this gene are extremely weak against pain, causing it to take a lot less pain to make the carrier fall unconscious.</description>
+        <iconPath>EBSG/Gene_MajorFeeble</iconPath>
+        <marketValueFactor>0.8</marketValueFactor>
+        <displayOrderInCategory>40.1</displayOrderInCategory>
+        <statOffsets>
+            <PainShockThreshold>-0.30</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>feeble</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainfulBase">
+        <defName>EBSG_VeryFeeble</defName>
+        <label>very feeble</label>
+        <description>Carriers of this gene are very weak against pain, causing it to take less pain to make the carrier fall unconscious.</description>
+        <iconPath>EBSG/Gene_Feeble</iconPath>
+        <marketValueFactor>0.9</marketValueFactor>
+        <displayOrderInCategory>40.2</displayOrderInCategory>
+        <statOffsets>
+            <PainShockThreshold>-0.20</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>feeble</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainfulBase">
+        <defName>EBSG_Feeble</defName>
+        <label>feeble</label>
+        <description>Carriers of this gene are somewhat weak against pain, causing it to take a little less pain to make the carrier fall unconscious.</description>
+        <iconPath>EBSG/Gene_Feeble</iconPath>
+        <displayOrderInCategory>40.3</displayOrderInCategory>
+        <statOffsets>
+            <PainShockThreshold>-0.10</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>feeble</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainfulBase">
+        <defName>EBSG_Stout</defName>
+        <label>stout</label>
+        <description>Carriers of this gene can withstand a little more pain without passing out.</description>
+        <iconPath>EBSG/Gene_Stout</iconPath>
+        <displayOrderInCategory>40.4</displayOrderInCategory>
+        <statOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>sturdy</symbol></li>
+                <li><symbol>stout</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainfulBase">
+        <defName>EBSG_VeryStout</defName>
+        <label>very stout</label>
+        <description>Carriers of this gene can withstand a lot more pain without passing out.</description>
+        <iconPath>EBSG/Gene_Stout</iconPath>
+        <displayOrderInCategory>40.5</displayOrderInCategory>
+        <marketValueFactor>1.10</marketValueFactor>
+        <statOffsets>
+            <PainShockThreshold>0.20</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>sturdy</symbol></li>
+                <li><symbol>stout</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainfulBase">
+        <defName>EBSG_ExtremelyStout</defName>
+        <label>extremely stout</label>
+        <description>Carriers of this gene can withstand extreme amounts of pain without passing out.\n\nThis will attempt to raise the carrier's pain shock threshold beyond the normal maximum, which mitigates the effects of things that lower the pain shock threshold.</description>
+        <iconPath>EBSG/Gene_MajorStout</iconPath>
+        <displayOrderInCategory>40.6</displayOrderInCategory>
+        <marketValueFactor>1.20</marketValueFactor>
+        <statOffsets>
+            <PainShockThreshold>0.30</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>sturdy</symbol></li>
+                <li><symbol>stout</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GenePainfulBase">
+        <defName>EBSG_SuperStout</defName>
+        <label>super stout</label>
+        <description>Carriers of this gene can withstand unimaginable amounts of pain without passing out.\n\nThis will attempt to raise the carrier's pain shock threshold beyond the normal maximum, which mitigates the effects of things that lower the pain shock threshold.</description>
+        <iconPath>EBSG/Gene_MajorStout</iconPath>
+        <displayOrderInCategory>40.7</displayOrderInCategory>
+        <marketValueFactor>1.20</marketValueFactor>
+        <statOffsets>
+            <PainShockThreshold>0.40</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-4</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>sturdy</symbol></li>
+                <li><symbol>stout</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_Wimp</defName>
+        <label>wimpy</label>
+        <labelShortAdj>wimp</labelShortAdj>
+        <description>Carriers of this gene are wimps, and the amount of pain it takes for them to fall unconscious is drastically lowered.\n\nThis will stack with most other pain genes. It is incompatible with the constant pain genes because a pawn having both wimp and those genes frequently results in them being constantly downed.</description>
+        <iconPath>EBSG/Gene_Wimp</iconPath>
+        <displayCategory>Pain</displayCategory>
+        <displayOrderInCategory>40.9</displayOrderInCategory>
+        <forcedTraits>
+            <li>
+                <def>Wimp</def>
+            </li>
+        </forcedTraits>
+        <suppressedTraits>
+            <li>
+                <def>Masochist</def>
+            </li>
+        </suppressedTraits>
+        <biostatMet>2</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>wimp</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_PainTraits</li>
+            <li>EBSG_Wimp</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_Masochist</defName>
+        <label>masochist</label>
+        <description>Carriers of this gene have pain receptors that release dopamine whenever it is triggered.\n\nThis will stack with most other pain genes.</description>
+        <iconPath>EBSG/Gene_Masochist</iconPath>
+        <displayCategory>Pain</displayCategory>
+        <displayOrderInCategory>40.8</displayOrderInCategory>
+        <forcedTraits>
+            <li>
+                <def>Masochist</def>
+            </li>
+        </forcedTraits>
+        <suppressedTraits>
+            <li>
+                <def>Wimp</def>
+            </li>
+        </suppressedTraits>
+        <biostatMet>-2</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>maso</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>chist</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_PainTraits</li>
+        </exclusionTags>
+    </GeneDef>
+</Defs>
